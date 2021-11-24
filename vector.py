@@ -36,7 +36,11 @@ class Vector:
     
     def __str__(self):
         """Produce string representation of vector."""
-        return '<' + str(self._coords)[1: -1] + '>'
+        return '< ' + str(self._coords)[1: -1] + ' >'
         
     
-         
+
+v = Vector(5)
+v[1] = 3
+v[-1] = 10
+print(v)
